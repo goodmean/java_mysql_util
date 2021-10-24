@@ -1,6 +1,6 @@
 DROP DATABASE IF EXISTS mysqlutil;
 CREATE DATABASE mysqlutil;
-USE mysql;
+USE mysqlutil;
 
 CREATE TABLE article (
     id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -21,3 +21,5 @@ SET regDate = NOW(),
 updateDate = NOW(),
 title = '제목2',
 `body` = '내용2';
+
+SELECT * FROM article;
